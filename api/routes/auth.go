@@ -18,7 +18,6 @@ func (u *AuthRoutes) SetupRoutes(router *gin.Engine) {
 	userGroup := router.Group("/auth")
 	{
 		userGroup.POST("/login", authHandler.Login)
-		userGroup.GET("/access", authHandler.GetAcess)
 	}
 }
 
